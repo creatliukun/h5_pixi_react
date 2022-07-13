@@ -2,7 +2,7 @@
 
 ### 创建项目
 
-npx create-react-app  +`项目名`
+npx create-react-app +`项目名`
 
 ### 运行
 
@@ -40,8 +40,9 @@ yarn add -D postcss-loader postcss-px-to-viewport
 ```
 
 - 4 暴露命令：`npm run eject`
-这一步之后有一个报错，我的解决方案是在页面的根目录创建一个`.env`文件，文件中写上`NODE_ENV = "development"`,
-然后在`package.json`文件中找到
+  这一步之后有一个报错，我的解决方案是在页面的根目录创建一个`.env`文件，文件中写上`NODE_ENV = "development"`,
+  然后在`package.json`文件中找到
+
 ```json
   "eslintConfig": {
     "extends": [
@@ -54,7 +55,10 @@ yarn add -D postcss-loader postcss-px-to-viewport
     }
   },
 ```
+
 - 5，进行配置
+  找到暴露出来的 webpack.config.js,在 config 文件夹中，然后对里面的数据进行配置
+  !["webpack"](https://cdn.staticaly.com/gh/creatliukun/picx@master/images/webpack.171qopda7ohs.jpg "webpack")
 
 * [页面相关的 dp](https://juejin.cn/post/6844903845617729549#heading-28)
 
