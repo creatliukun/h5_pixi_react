@@ -87,20 +87,21 @@ yarn add -D postcss-loader postcss-px-to-viewport
 
 * [关于移动端适配，你必须要知道的](https://juejin.cn/post/6844903845617729549#heading-28)
 
-### 安装 cross-env 插件，进行识别环境地址
-
-````bash
-# 使用npm安装
-npm i -D cross-env
-# 使用yarn安装
-yarn add cross-env
-```
-````
-
 ### 安装 pixi.js 和 gsap
 
 ```
 npm install pixi.js
 npm install gsap
 
+```
+
+### 删掉多余注释
+
+删掉不需要的代码，删掉后在对应文件里去清除掉引用
+
+```
+APP.test.js
+reportWebVitals.js
+setupTests.js
+logo.svg
 ```

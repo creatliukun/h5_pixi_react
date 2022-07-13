@@ -1,9 +1,10 @@
-// import logo from './logo.svg';
 import './App.css';
+// import BrakeBanner from './Animate';
 
 function App() {
+
   return (
-    <div className="App">
+    <div id="pixi-app">
       <header className="App-header">
         <div className='font-text'>测试字体大小</div>
       </header>
