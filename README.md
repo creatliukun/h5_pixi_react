@@ -57,8 +57,24 @@ yarn add -D postcss-loader postcss-px-to-viewport
 ```
 
 - 5，进行配置
-  找到暴露出来的 webpack.config.js,在 config 文件夹中，然后对里面的数据进行配置
+  找到暴露出来的 webpack.config.js,在 config 文件夹中，然后对里面的数据进行配置，如果入下面的结构可以这样配置
   !["webpack"](https://cdn.staticaly.com/gh/creatliukun/picx@master/images/webpack.171qopda7ohs.jpg "webpack")
+  <img src="https://cdn.staticaly.com/gh/creatliukun/picx@master/images/webpack.171qopda7ohs.jpg" width="200"  alt="支付宝小程序"/><br/>
+  加入这段代码
+  ```
+  [
+  'postcss-px-to-viewport',
+  {
+    viewportWidth: 750, // (Number) The width of the viewport.
+    viewportHeight: 1334, // (Number) The height of the viewport. -- 一般不需要配置
+    unitPrecision: 3, // (Number) The decimal numbers to allow the REM units to grow to.
+    viewportUnit: "vw", // (String) Expected units.
+    selectorBlackList: [], // (Array) The selectors to ignore and leave as px.
+    minPixelValue: 1, // (Number) Set the minimum pixel value to replace.
+    mediaQuery: false // (Boolean) Allow px to be converted in media queries.
+  }
+  ],
+  ```
 
 * [页面相关的 dp](https://juejin.cn/post/6844903845617729549#heading-28)
 
