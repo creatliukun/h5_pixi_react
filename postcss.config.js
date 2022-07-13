@@ -1,3 +1,5 @@
+let baseUrl = process.env.REACT_APP_ENV === "production" ? process.env.REACT_APP_BASE_URL: "http://test.com";
+
 //postcss.config.js文件
 module.exports = {
     plugins: {
