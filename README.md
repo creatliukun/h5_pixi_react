@@ -58,8 +58,7 @@ yarn add -D postcss-loader postcss-px-to-viewport
 
 - 5，进行配置
   找到暴露出来的 webpack.config.js,在 config 文件夹中，然后对里面的数据进行配置，如果入下面的结构可以这样配置
-  !["webpack"](https://cdn.staticaly.com/gh/creatliukun/picx@master/images/webpack.171qopda7ohs.jpg "webpack")
-  <img src="https://cdn.staticaly.com/gh/creatliukun/picx@master/images/webpack.171qopda7ohs.jpg" width="200"  alt="支付宝小程序"/><br/>
+  !["webpack"](https://cdn.staticaly.com/gh/creatliukun/picx@master/images/webpack1.7cwxzwv48o40.jpg "webpack")
   加入这段代码
   ```
   [
