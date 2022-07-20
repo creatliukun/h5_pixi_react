@@ -22,7 +22,13 @@ export default function PieChart() {
             // 计算当前的角度 之前的角度+占总比的比例*2pi，简单的数学题
             const angle = prevAngle + fraction * Math.PI * 2;
             // 每一个的颜色
-            c.fillStyle = colors[index];
+            // c.fillStyle = colors[index];
+            // 每一个的颜色变为渐变色，以x=200,y=200,半径=10画一个圆开始，以x=200,y=200,半径为100画圆结束
+            const grad = c.createRadialGradient( 200,200, 10, 200,200, 100); 
+            grad.addColorStop(0,"white"); 
+            grad.addColorStop(1,colors[index]);
+            
+            c.fillStyle = grad; 
             // 画线
             c.beginPath();
             // 从坐标点（200, 200）开始绘画
