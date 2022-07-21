@@ -95,13 +95,6 @@ npm install gsap
 
 ```
 
-### 删掉多余注释
+### canvas 制作高级学习
+[网址]('https://joshondesign.com/p/books/canvasdeepdive/chapter04.html')
 
-删掉不需要的代码，删掉后在对应文件里去清除掉引用
-
-```
-APP.test.js
-reportWebVitals.js
-setupTests.js
-logo.svg
-```
