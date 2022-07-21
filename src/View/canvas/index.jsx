@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react'
+// 柱状图
 import AxisLinesLabels from './component/AxisLinesLabels'
+// 饼状图
 import PieChart from './component/Piechart'
-// 用canvas画一个房子
+// 雪花模拟
+import ParticleSimulator from './component/ParticleSimulator'
+
 export default function CanvasComp() {
-    const [currentCanvas, setCurrentCanvas] = useState(1)
+    const [currentCanvas, setCurrentCanvas] = useState(0)
     const clickToggle = () => {
         console.log("clickToggle")
-        const randomNum = parseInt(Math.random()*10)
+        const randomNum = parseInt(Math.random() * 10)
         setCurrentCanvas(randomNum)
     }
 
@@ -14,7 +18,8 @@ export default function CanvasComp() {
         return (
             <>
                 {currentCanvas === 0 && <AxisLinesLabels />}
-                {currentCanvas === 1 && <PieChart />}
+                {currentCanvas === 1 && <ParticleSimulator />}
+                {currentCanvas === 2 && <PieChart />}
             </>
 
         )
